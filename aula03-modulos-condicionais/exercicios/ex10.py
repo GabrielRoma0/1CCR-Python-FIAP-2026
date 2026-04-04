@@ -10,3 +10,24 @@ tipo de triângulo que estes três lados formam, com base nos seguintes casos:
 ▪ Se apenas dois dos lados forem iguais, apresente a mensagem: TRIANGULO ISOSCELES;
 
 """
+
+lado_a = float(input('Digite o lado (A) do triângulo: '))
+lado_b = float(input('Digite o lado (B) do triângulo: '))
+lado_c = float(input('Digite o lado (C) do triângulo: '))
+
+if lado_a**2 == lado_b**2 + lado_c**2:
+    print('Triângulo retângulo! ')
+elif lado_a**2 > lado_b**2 + lado_c**2:
+    print('Triângulo obtusângulo! ')
+elif lado_a**2 < lado_b**2 + lado_c**2:
+    print('Triângulo acutângulo! ')
+    if lado_a == lado_b == lado_c:
+        print('Triângulo equilátero! ')
+    elif lado_b == lado_c != lado_a:
+        print('Triângulo isósceles! ')
+    elif lado_a == lado_c != lado_b:
+        print('Triângulo isósceles! ')
+    elif lado_a == lado_b != lado_c:
+        print('Triângulo isósceles! ')
+    else:
+        print('Opção inválida! ')
