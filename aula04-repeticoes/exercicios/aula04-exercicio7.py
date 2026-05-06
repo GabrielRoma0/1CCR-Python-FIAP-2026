@@ -8,3 +8,6 @@ print('Matriz 3x4: ')
 for linha in matriz:
     print(linha)
 
+'''
+Fiz errado
+'''
